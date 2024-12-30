@@ -550,7 +550,7 @@ async def start(client, message):
             ],[
                 InlineKeyboardButton("𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥", url=OWNER_LNK)
             ]]
-            if STREAM_MODE == True:
+            if STREAM_MODE == False:
                 button.append([InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}')])
             msg = await client.send_cached_media(
                 chat_id=message.from_user.id,
